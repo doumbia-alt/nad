@@ -1,0 +1,36 @@
+article{
+    display: block;
+    text-align: center;
+    
+}
+.hdmi{
+    text-indent: 500px;
+
+}
+.att{
+    
+    text-indent: 50px -70px;
+    
+
+    
+}
+.image{
+    width: 900px;
+    height: 400px;
+    
+}
+.face{
+    text-indent: 100px;
+    font-size: 50px;
+    color: rgba(0, 0, 255, 0.945);
+}
+.ppp{
+    text-indent: 100px;
+}
+hr{
+    margin-bottom: 2em;
+    padding-top: 08px;
+}
+.bx bxl-facebook{
+    color: rgba(0, 0, 255, 0.945);
+}

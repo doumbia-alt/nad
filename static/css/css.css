@@ -1,0 +1,33 @@
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: 1px solid black;
+    text-align: center;
+    
+}
+th
+{
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+h4{
+    font-size: 9pt;
+    font-family: Arial, Helvetica, San Serif;
+}
+
+.cente {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+  }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+  }

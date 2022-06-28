@@ -1,0 +1,26 @@
+hr{
+    background-color: rgb(85, 134, 10);
+    margin-bottom: 2em;
+    padding-top: 08px;
+    
+    
+}
+.mt-3{
+    text-indent: 500px;
+}
+.btn-get-started{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: rgb(255, 102, 0);
+    margin-top: 15px;
+}
