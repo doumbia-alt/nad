@@ -1,0 +1,1 @@
+web: gunicorn disnad.wsgi --log-file -
