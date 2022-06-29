@@ -5,5 +5,5 @@ DEBUG = False
 TEMPLATE_DEBUG = False
 
 DATABASES['default'] = dj_database_url.config()
-SECRET_KEY = 'v_ya#8%%4npw*7(^=7_ooznw$(i6kbp!i9wymp6s$b_@$@ees-'
+SECRET_KEY = '91q@vd01_b2zym!w^@(mc7%8yq^2zw3c#$mp(_&u!e@lg!^$(4'
 ALLOWED_HOSTS = ['isnad.herokuapp.com']
