@@ -41,34 +41,34 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href={% url 'index.html' %}><img src={% static 'static/img/logo.jpg' %} alt=""> </a></h1>
+      <h1 class="logo me-auto"><a href={% url 'index' %}><img src={% static 'static/img/logo.jpg' %} alt=""> </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index" class="logo me-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href={% url 'index.html' %}>ACCEUIL</a></li>
-          <li><a class="nav-link scrollto" href={% url 'a propros.html' %}>A propos</a></li>
+          <li><a class="nav-link scrollto active" href={% url 'index' %}>ACCEUIL</a></li>
+          <li><a class="nav-link scrollto" href={% url 'a propros' %}>A propos</a></li>
           <li class="dropdown"><a href="#"><span>Formations</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#">Brevet d'étude téchnicien (BTS)<span></span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href={% url 'ida.html' %}>Bts Informatique Developpeur d'Application(IDA)</a></li>
-                  <li><a href={% url 'gbat.html' %}>Bts Genie Civil Option Batiment(GBAT)</a></li>
-                  <li><a href={% url 'fcge.html' %}>Bts Finance Comptabilite Gestion d'Entreprise(FCGE)</a></li>
-                  <li><a href={% url 'rhcom.html' %}>Bts Ressources Humaines Communications(RHCOM)</a></li>
-                  <li><a href={% url 'gescom.html' %}>Bts Gestion Commerciale(GESCOM)</a></li>
-                  <li><a href={% url 'th.html' %}>Bts Tourisme Hotellerie(TH)</a></li>
-                  <li><a href={% url 'ad.html' %}>Bts Assistanat de Direction (AD)</a></li>
-                  <li><a href={% url 'log.html' %}>Bts Logistique(LOG)</a></li>
+                  <li><a href={% url 'ida' %}>Bts Informatique Developpeur d'Application(IDA)</a></li>
+                  <li><a href={% url 'gbat' %}>Bts Genie Civil Option Batiment(GBAT)</a></li>
+                  <li><a href={% url 'fcge' %}>Bts Finance Comptabilite Gestion d'Entreprise(FCGE)</a></li>
+                  <li><a href={% url 'rhcom' %}>Bts Ressources Humaines Communications(RHCOM)</a></li>
+                  <li><a href={% url 'gescom' %}>Bts Gestion Commerciale(GESCOM)</a></li>
+                  <li><a href={% url 'th' %}>Bts Tourisme Hotellerie(TH)</a></li>
+                  <li><a href={% url 'ad' %}>Bts Assistanat de Direction (AD)</a></li>
+                  <li><a href={% url 'log' %}>Bts Logistique(LOG)</a></li>
                 </ul>
               </li>
               <li><a href="#">licence</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href={% url 'pre-inscription.html' %}>PRE-INSCRIPTION</a></li>  
+          <li><a class="nav-link scrollto" href={% url 'pre-inscription' %}>PRE-INSCRIPTION</a></li>  
           <li><a class="nav-link scrollto" href="#">actualite</a></li>
-          <li><a class="nav-link scrollto" href={% url 'contact.html' %}>Contact</a></li>
+          <li><a class="nav-link scrollto" href={% url 'contact' %}>Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -91,7 +91,7 @@
           <h2>Notre passions<br><span>Votre formations!</span></h2>
           <div>
             <h3>Beneficiez de la bourse</h3>
-            <a href={% url 'pre-inscription.html' %} class="btn-get-started scrollto">Inscrivez-vous maintenant</a>
+            <a href={% url 'pre-inscription' %} class="btn-get-started scrollto">Inscrivez-vous maintenant</a>
           </div>
         </div>
 
