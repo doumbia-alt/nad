@@ -1,21 +1,60 @@
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: fixed;
+.col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
-.center {
+label {
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+
+.form-contact {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    width: 100%;
+    padding: 13px 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+  }  
 
-table
-{
-    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; 
+    
 }
-td
-{
-    border: 1px solid black;
-}
+
+   
+  
+
+  
+
+
+
+
+  

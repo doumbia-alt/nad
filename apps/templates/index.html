@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Isnad</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href={% static 'static/img/logo.jpg' %} rel="icon">
+  <link href={% static 'static/img/logo.jpg' %} rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={% static 'static/vendor/aos/aos.css' %} rel="stylesheet">
+  <link href={% static 'static/vendor/bootstrap/css/bootstrap.min.css' %} rel="stylesheet">
+  <link href={% static 'static/vendor/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+  <link href={% static 'static/vendor/glightbox/css/glightbox.min.css' %} rel="stylesheet">
+  <link href={% static 'static/vendor/swiper/swiper-bundle.min.css' %} rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href={% static 'static/css/style.css' %} rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Rapid - v4.7.1
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href={% url 'index.html' %}><img src={% static 'static/img/logo.jpg' %} alt=""> </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href={% url 'index.html' %}>ACCEUIL</a></li>
+          <li><a class="nav-link scrollto" href={% url 'a propros.html' %}>A propos</a></li>
+          <li class="dropdown"><a href="#"><span>Formations</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#">Brevet d'étude téchnicien (BTS)<span></span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href={% url 'ida.html' %}>Bts Informatique Developpeur d'Application(IDA)</a></li>
+                  <li><a href={% url 'gbat.html' %}>Bts Genie Civil Option Batiment(GBAT)</a></li>
+                  <li><a href={% url 'fcge.html' %}>Bts Finance Comptabilite Gestion d'Entreprise(FCGE)</a></li>
+                  <li><a href={% url 'rhcom.html' %}>Bts Ressources Humaines Communications(RHCOM)</a></li>
+                  <li><a href={% url 'gescom.html' %}>Bts Gestion Commerciale(GESCOM)</a></li>
+                  <li><a href={% url 'th.html' %}>Bts Tourisme Hotellerie(TH)</a></li>
+                  <li><a href={% url 'ad.html' %}>Bts Assistanat de Direction (AD)</a></li>
+                  <li><a href={% url 'log.html' %}>Bts Logistique(LOG)</a></li>
+                </ul>
+              </li>
+              <li><a href="#">licence</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href={% url 'pre-inscription.html' %}>PRE-INSCRIPTION</a></li>  
+          <li><a class="nav-link scrollto" href="#">actualite</a></li>
+          <li><a class="nav-link scrollto" href={% url 'contact.html' %}>Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+        <div class="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in" data-aos-delay="100">
+          <h2>Notre passions<br><span>Votre formations!</span></h2>
+          <div>
+            <h3>Beneficiez de la bourse</h3>
+            <a href={% url 'pre-inscription.html' %} class="btn-get-started scrollto">Inscrivez-vous maintenant</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay="200">
+          <img src={% static 'static/img/intro-img.svg' %} alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+              <img src={% static 'static/img/about-img.jpg' %} alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+              <h2>A Propos de nous?</h2>
+              <h3>L’institut de Formation ISNAD est un établissement d’enseignement supérieur et professionnel agréé par l’État de Côte d’ivoire.</h3>
+              <p> Il a ouvert ses portes à la faveur de la rentrée 2020-2021 avec les agréments du ministère de l’enseignement supérieur, technique et professionnel.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Bons de réduction d’au moins 50%.</li>
+                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <li><i class="bi bi-check-circle"></i> Développer des compétences à une formation de base</li>
+                <li><i class="bi bi-check-circle"></i> 100 % des élèves effectuent des stages en entreprise</li>
+                <li><i class="bi bi-check-circle"></i> 100 % des élèves effectuent des stages en entreprise</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+        </header>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-37cbe7a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37cbe7a" data-element_type="section">
+          <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a21bd83" data-id="a21bd83" data-element_type="column">
+    <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-e06c8cd elementor-widget elementor-widget-vc_custom_heading" data-id="e06c8cd" data-element_type="widget" data-widget_type="vc_custom_heading.default">
+      <div class="elementor-widget-container">
+    <div class=" vc_custom_heading  consulting_heading_font  text_align_center" ><h2 style="text-align: center;font-weight:700" class="consulting-custom-title">Nos Formations
+</h2></div>		</div>
+      </div>
+        </div>
+  </div>
+            </div>
+  </section>
+  
+      <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8aa1d8d" data-id="8aa1d8d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-8a525a7 elementor-widget elementor-widget-stm_info_box" data-id="8a525a7" data-element_type="widget" data-widget_type="stm_info_box.default">
+      <div class="elementor-widget-container">
+        <div class="info_box elementor-consulting-info-box style_4 ">
+
+      
+      
+          
+                                                                                      <div class="info_box_image"><img width="350" height="204" src="https://www.uipa.ci/wp-content/uploads/2021/10/2-350x204.png" class="attachment-consulting-image-350x204-croped size-consulting-image-350x204-croped" alt="" loading="lazy" /></div>
+                                                          
+              
+                                  <div class="title">
+                                                                          <h4 class="no_stripe">Filières Professionnelles</h4>
+                                          </div>
+                              <p style="text-align: justify;"><span style="color: #000000;">Des enseignants expérimentés pour une formation de qualité et un encadrement personnalisé </span></p>
+               <a class="read_more" target="_self" href="https://www.uipa.ci/filiere-professionnelles/">En savoir plus</a>                
+          
+              </div>
+  </div>
+      </div>
+        </div>
+  </div>
+      
+          
+                                                                                      
+  </div>
+      </div>
+        </div>
+  </div>
+            </div>
+  </section>
+
+        </div>
+  </div>
+            </div>
+  </section>
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-48680c9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48680c9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+          <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8cc5e99" data-id="8cc5e99" data-element_type="column">
+    <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-ee32180 elementor-widget elementor-widget-vc_custom_heading" data-id="ee32180" data-element_type="widget" data-widget_type="vc_custom_heading.default">
+      <div class="elementor-widget-container">
+    <div class=" vc_custom_heading  consulting_heading_font  text_align_center" ><h2 style="text-align: center;font-weight:700" class="consulting-custom-title">Nos Atouts
+</h2></div>		</div>
+      </div>
+      <div class="elementor-element elementor-element-eb17147 elementor-widget elementor-widget-text-editor" data-id="eb17147" data-element_type="widget" data-widget_type="text-editor.default">
+      <div class="elementor-widget-container">
+            <p><strong><span style="color: #000000;"><span class="learn_about_us_title_sub">Un environnement stimulant, des infrastructures de pointe et des professeurs de renom. </span>À l&#8217;Université Internationale Privée d&#8217;Abidjan, vous êtes une personne à part entière, porteuse d&#8217;un potentiel considérable, et vous recevez toute la considération que vous méritez afin d&#8217;assurer votre épanouissement personnel.</span></strong></p>
+          </div>
+      </div>
+        </div>
+  </div>
+            </div>
+  </section>
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row feature-item">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src={% static 'static/img/features-1.svg' %} class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+            <p>
+              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+            </p>
+            <p>
+              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src={% static 'static/img/features-2.svg' %} class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
+            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
+            <p>
+              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+            </p>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Organisation</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src={% static 'static/img/team-2.jpg' %} class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src={% static 'static/img/team-2.jpg' %} class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src={% static 'static/img/team-3.jpg' %} class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src={% static 'static/img/team-4.jpg' %} class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    
+    
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+              <div class="col-sm-6">
+
+                <div class="footer-info">
+                  
+                  <h3>I.S.N.A.D</h3>
+                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                </div>
+
+
+              </div>
+              
+              <div class="col-sm-6">
+                
+                <div class="footer-info">
+                  <h4>Contactez Nous</h4>
+                  <p>
+                    COCODY VALLON <br>
+                    non loin du Collège Tanon<br>
+                    Namanko et du Carrefour Duncan<br>
+                    <strong>Telephone:</strong> 2722203361 / 0748953878<br>
+                    <strong>Email:</strong>isnad.ecolesup@gmail.com<br>
+                  </p>
+                </div>
+
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Isnad</strong>. Tout droit reservez
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+      -->
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src={% static 'static/vendor/purecounter/purecounter.js' %}></script>
+  <script src={% static 'static/vendor/aos/aos.js' %}></script>
+  <script src={% static 'static/vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
+  <script src={% static 'static/vendor/glightbox/js/glightbox.min.js' %}></script>
+  <script src={% static 'static/vendor/isotope-layout/isotope.pkgd.min.js' %}></script>
+  <script src={% static 'static/vendor/swiper/swiper-bundle.min.js' %}></script>
+  <script src={% static 'static/vendor/php-email-form/validate.js' %}></script>
+
+  <!-- Template Main JS File -->
+  <script src={% static 'static/js/main.js' %}></script>
+
+</body>
+
+</html>
