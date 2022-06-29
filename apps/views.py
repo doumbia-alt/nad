@@ -23,13 +23,13 @@ def log(request):
 def ida(request):
     return render(request, 'ida.html', {})
 
-def a_propos(request):
+def apropos(request):
     return render(request, 'a_propos.html', {})
 
 def contact(request):
     return render(request, 'contact.html', {})
 
-def pre_inscription(request):
+def preinscription(request):
     return render(request, 'pre_inscription.html', {})
 
 def rhcom(request):
