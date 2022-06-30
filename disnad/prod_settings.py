@@ -8,5 +8,5 @@ TEMPLATE_DEBUG = True
 MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DATABASES['default'] = dj_database_url.config()
-SECRET_KEY = '91q@vd01_b2zym!w^@(mc7%8yq^2zw3c#$mp(_&u!e@lg!^$(4'
+SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS = ['isnad.herokuapp.com']
