@@ -48,7 +48,7 @@ def preinscription(request):
         #context = {'success': False}
         firstname = request.POST['firstname']
         lastname = request.POST['lastname']
-        email = request.POST['email']
+        email = request.POST['email'] 
         phone = request.POST['phone']
         schoolId = request.POST['schoolId']
         trainingId = request.POST['trainingId']
@@ -57,7 +57,7 @@ def preinscription(request):
         print(firstname,lastname,email,phone,schoolId,trainingId,facultyId)
         voir = Pre_inscription(nom = firstname, prenom = lastname, email = email , telephone = phone , ecole = schoolId , formation = trainingId , filiere = facultyId)
         voir.save()
-    return render(request, 'pre_inscription.html', {})
+    return render(request, 'pre-inscription.html', {})
 
 def rhcom(request):
     return render(request, 'rhcom.html', {})
