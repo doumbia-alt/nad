@@ -6,7 +6,7 @@ from django.utils import timezone
 
 class Contact(models.Model):
  nom = models.TextField()
- prenom = models.TextField()
+ prenom = models.TextField(null=True , blank=True)
  email = models.EmailField(null=True , blank=True)
  sujet = models.TextField()
  message = models.TextField(null=True , blank=True)
