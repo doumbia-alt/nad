@@ -55,7 +55,7 @@ def preinscription(request):
         facultyId = request.POST['facultyId']
         
         print(firstname,lastname,email,phone,schoolId,trainingId,facultyId)
-        voir = Pre_inscription(nom = firstname, prenom = lastname, email = email , telephone = phone , ecole = schoolId , formation = trainingId , filiere = facultyId)
+        voir = Pre_inscription(nom = firstname, prenom = lastname, email = email , phone = phone , ecole = schoolId , formation = trainingId , filiere = facultyId)
         voir.save()
     return render(request, 'pre-inscription.html', {})
 
