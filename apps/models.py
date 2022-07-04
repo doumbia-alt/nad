@@ -19,7 +19,7 @@ class Pre_inscription(models.Model):
  nom = models.TextField()
  prenom = models.TextField()
  email = models.EmailField(null=True , blank=True)
- telephone = models.IntegerField(default=1, null=True , blank=True)
+ telephone = models.CharField(max_length=12)
  ecole = models.TextField()
  formation = models.TextField()
  filiere = models.TextField()
