@@ -99,11 +99,13 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
+    {{success}}
     <section class="section-page" style="background-color: #F7F7F7;">
       <div class="container">
           <div class="row">
               <div class="col-md">
-                  <form class="ess-form-checked" action="https://ifsm.ci/contact/send" method="POST">
+                  <form class="ess-form-checked" action="" method="POST">
+                    {% csrf_token %}
                       <input type="hidden" name="_token" value="zVQJCpVtyCEYHP6HCTQCsJgLmj1AH7NXxpW7rzNA">                    <h2 class="fontTitle colorBlack title-section">Ecrivez-nous</h2>
                       <div class="row">
                           <div class="col-sm-6">
@@ -129,6 +131,11 @@
                               <small><small>(*) Obligatoire</small></small>
                               <br>
                               <br>
+                              <div class="mb-3">
+                                <div class="loading">chargement</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Votre message a bien ètè transféré ! Merci</div>
+                              </div>  
                               <button type="submit" class="esg-btn">Envoyez <span><i class="far fa-envelope"></i></span></button>
                           </div>
                       </div>
