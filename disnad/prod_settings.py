@@ -1,8 +1,8 @@
 import dj_database_url
 from disnad.settings import*
 
-DEBUG = True
-TEMPLATE_DEBUG = True
+DEBUG = False
+TEMPLATE_DEBUG = False
 
 
 MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
