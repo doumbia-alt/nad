@@ -7,7 +7,7 @@ urlpatterns = [
 
 path(r'', views.index, name="index"),
 path(r'preinscription/', views.preinscription, name='preinscription'),
-path(r'contact/', views.contact, name='contact'),
+#path(r'contact/', views.contact, name='contact'),
 path(r'apropos/', views.apropos, name='apropos'),
 path(r'actualite/', views.actualite, name='actualite'),
 path(r'ad/', views.ad, name='ad'),
