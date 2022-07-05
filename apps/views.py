@@ -44,7 +44,19 @@ def contact(request):
 
 def preinscription(request):
     
-    
+    if request.method == "POST":
+        #context = {'success': False}
+        firstname = request.POST['firstname']
+        lastname = request.POST['lastname']
+        email = request.POST['email'] 
+        phone = request.POST['phone']
+        schoolId = request.POST['schoolId']
+        trainingId = request.POST['trainingId']
+        facultyId = request.POST['facultyId']
+        
+        print(firstname,lastname,email,phone,schoolId,trainingId,facultyId)
+        voir = Cre_inscription(nom = firstname, prenom = lastname, email = email , phone = phone , ecole = schoolId , formation = trainingId , filiere = facultyId)
+        voir.save()
     return render(request, 'pre-inscription.html', {})
 
 def rhcom(request):
