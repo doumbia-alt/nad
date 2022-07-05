@@ -42,7 +42,10 @@ def contact(request):
         voir.save()
     return render(request, 'contact.html', {})
 
-
+def preinscription(request):
+    
+    
+    return render(request, 'pre-inscription.html', {})
 
 def rhcom(request):
     return render(request, 'rhcom.html', {})
