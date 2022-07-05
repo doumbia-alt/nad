@@ -28,24 +28,21 @@ def ida(request):
 def apropos(request):
     return render(request, 'a_propos.html', {})
 
-
-
-def preinscription(request):
+def contact(request):
     
     if request.method == "POST":
         #context = {'success': False}
-        firstname = request.POST['firstname']
+        fistname = request.POST['firstname']
         lastname = request.POST['lastname']
-        email = request.POST['email'] 
-        phone = request.POST['phone']
-        schoolId = request.POST['schoolId']
-        trainingId = request.POST['trainingId']
-        facultyId = request.POST['facultyId']
-        
-        print(firstname,lastname,email,phone,schoolId,trainingId,facultyId)
-        voir = Cre_inscription(nom = firstname, prenom = lastname, email = email , phone = phone , ecole = schoolId , formation = trainingId , filiere = facultyId)
+        email = request.POST['email']
+        subject = request.POST['subject']
+        message = request.POST['message']
+        print(fistname,lastname,email,subject,message)
+        voir = Contact(nom = fistname, prenom = lastname, email = email , sujet = subject , message = message)
         voir.save()
-    return render(request, 'pre-inscription.html', {})
+    return render(request, 'contact.html', {})
+
+
 
 def rhcom(request):
     return render(request, 'rhcom.html', {})
