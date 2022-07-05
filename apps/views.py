@@ -28,19 +28,7 @@ def ida(request):
 def apropos(request):
     return render(request, 'a_propos.html', {})
 
-def contact(request):
-    
-    if request.method == "POST":
-        #context = {'success': False}
-        fistname = request.POST['firstname']
-        lastname = request.POST['lastname']
-        email = request.POST['email']
-        subject = request.POST['subject']
-        message = request.POST['message']
-        print(fistname,lastname,email,subject,message)
-        voir = Contact(nom = fistname, prenom = lastname, email = email , sujet = subject , message = message)
-        voir.save()
-    return render(request, 'contact.html', {})
+
 
 def preinscription(request):
     
