@@ -25,8 +25,8 @@ def log(request):
 def ida(request):
     return render(request, 'ida.html', {})
 
-def apropos(request):
-    return render(request, 'a_propos.html', {})
+#def apropos(request):
+    #return render(request, 'a_propos.html', {})
 
 def contact(request):
     
